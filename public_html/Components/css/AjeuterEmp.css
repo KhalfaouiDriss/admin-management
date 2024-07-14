@@ -1,0 +1,215 @@
+ /* Reset CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-column: span 2;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333" width="18px" height="18px"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px 18px;
+    padding-right: 40px;
+}
+
+button {
+    background-color: #ff4f4f;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    width:30%;
+}
+
+button:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+.btnInserer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200%;
+    border: 1px solid;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.anulle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    width:30%;
+    color: black;
+}
+
+
+
+@media ((max-width : 480px) and (min-width: 320px)) {
+      /* Reset CSS */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f6f5f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    input, select {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    select {
+        appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333" width="18px" height="18px"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 18px 18px;
+        padding-right: 40px;
+    }
+
+    button {
+        background-color: #ff4f4f;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 12px 20px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #ff6b6b;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    .btnInserer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: 1px solid;
+        color: white;
+        gap:  10px;
+    }
+    /* Media query for phones */
+    @media (max-width: 480px) {
+        form {
+            padding: 20px;
+        }
+    }
+}
